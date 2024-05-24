@@ -1,0 +1,143 @@
+
+.header {
+
+    padding: 15px 20px;
+    width:100%;
+    position:sticky;
+    top:0;
+    left:0;
+    z-index:1004;
+}
+
+button.menu {
+    position: absolute;
+    background:transparent;
+    border:none;
+    width:30px;
+    height:30px;
+    cursor:pointer;
+    outline:0;
+}
+
+button:hover {
+     transform: scale(1.1);
+     filter: drop-shadow(0px 3px 5px #2c2b2b);
+}
+
+.menu span {
+    z-index: 1003;
+    width:100%;
+    height:3px;
+    background: #000000;
+    display:block;
+    position:relative;
+    coursor:pointer;
+}
+.dark-theme .menu span {
+    background: #ffffff;
+}
+
+
+.menu span:before,
+.menu span:after {
+    content:'';
+    position:absolute;
+    left:0;
+    width:100%;
+    height:100%;
+    background: #000000;
+    transition: all 0.3s ease-out;
+}
+
+.dark-theme .menu span:before,
+.dark-theme .menu span:after {
+    content:'';
+    background: #ffffff;
+    transition: all 0.3s ease-out;
+}
+
+
+
+.menu span:before {
+    top:-8px;
+}
+
+.menu span:after {
+    top:8px;
+}
+
+.menu span.menu {
+    background:transparent;
+}
+
+.menu span.menu:before {
+    top:0;
+    transform:rotate(-45deg);
+    background: #000000;
+
+}
+
+.menu span.menu:after {
+    top:0;
+    transform:rotate(45deg);
+    background: #000000;
+}
+
+.sidebar {
+    background:#fff;
+    width:235px;
+    position:fixed;
+    top:0;
+    left:-235px;
+    height:100%;
+    filter: drop-shadow(0px 3px 5px #2c2b2b);
+    padding-top:90px;
+    transition:all 0.3s ease-out;
+}
+
+.sidebar ul {
+    list-style:none;
+}
+
+.sidebar ul li {
+    display:block;
+}
+
+.sidebar ul li a {
+    padding:8px 15px;
+    font-size:30px;
+    color:#222;
+    text-decoration:none;
+    display:block;
+    position:relative;
+    z-index:1002;
+    transition:all 0.3s ease-out;
+    font-weight:500;
+}
+
+.sidebar ul li a:before {
+    content:'';
+    position:absolute;
+    bottom:0;
+    left:50%;
+    right:50%;
+    transform:translate(-50%,-50%);
+    width:0;
+    height:1px;
+    background: #000000;
+    z-index:-1;
+    transition:all 0.3s ease-out;
+}
+
+.sidebar ul li a:hover:before {
+    width:100%;
+}
+
+.sidebar ul li a:hover {
+    color: #000000;
+}
+
+.sidebarshow {
+    left:0;
+    z-index: 1001;
+}

@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+body{
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 100vh;
+    gap: 80px;
+    transition: 0.6s ease-in-out;
+}
+.container {
+    max-width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#number {
+    font-size: 64px;
+    color: #151515;
+}
+
+h1 {
+    font-size: 64px;
+    color: #151515;
+}
+
+@font-face {
+    font-family: 'Zebra';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Zebra'), url('path/to/your/Zebra-Regular.woff2') format('woff2'),
+    url('path/to/your/Zebra-Regular.woff') format('woff');
+}
+
