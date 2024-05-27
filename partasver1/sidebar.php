@@ -10,7 +10,7 @@
 
 <div class="sidebar" id='sidebar'>
     <ul>
-        <li><a href="index.php">Dashboard</a></li>
+        <li><a href="index.html">Dashboard</a></li>
         <li><a href="Logs.php">Logs</a></li>
     </ul>
 </div>
